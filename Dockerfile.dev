@@ -1,0 +1,8 @@
+FROM golang:1.7
+
+RUN go get -v github.com/julienschmidt/httprouter
+
+EXPOSE 8080
+
+CMD ["go", "run", "main.go"]
+
